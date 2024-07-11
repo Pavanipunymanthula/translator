@@ -57,11 +57,11 @@ function setup() {
 }
 
 // A function to be called when the model has been loaded
-async  function modelReady() {
+  function modelReady() {
   select('#modelStatus').html('MobileNet Loaded!');
   // If you want to load a pre-trained model at the start
   
-  await classifier.load('./model.json', function() {
+  classifier.load('./model.json', function() {
      select('#modelStatus').html('Custom Model Loaded!');
    });
 }
@@ -104,16 +104,16 @@ function setupButtons() {
 
   // When the Dog button is pressed, add the current frame
   // from the video with a label of "dog" to the classifier
-  // buttonB = select('#E');
-  // buttonB.mousePressed(function() {
-  //   classifier.addImage('E');
-  //   select('#E').html(E++);
-  // });
-  // buttonB = select('#F');
-  // buttonB.mousePressed(function() {
-  //   classifier.addImage('F');
-  //   select('#F').html(F++);
-  // });
+   buttonB = select('#E');
+   buttonB.mousePressed(function() {
+     classifier.addImage('E');
+     select('#E').html(E++);
+   });
+   buttonB = select('#F');
+   buttonB.mousePressed(function() {
+    classifier.addImage('F');
+     select('#F').html(F++);
+   });
 
   // // When the Dog button is pressed, add the current frame
   // // from the video with a label of "dog" to the classifier

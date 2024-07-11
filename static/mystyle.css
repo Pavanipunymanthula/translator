@@ -1,3 +1,4 @@
+
 #loading{
 	position: fixed;
 	width: 100%;
@@ -7,8 +8,6 @@
 	 no-repeat center center;	
 	z-index: 99999;
 }
-
-
 
 .newshifter{
   padding: 5px 10px;
